@@ -13,6 +13,9 @@ import Title from '../../Components/Title';
 import { whydata , stepdata } from './data'
 import Bullet from '../../Components/Bullet';
 
+import paulo from '../../assets/images/testimonials.jpeg'
+
+import linda from '../../assets/images/testimonials2.jpeg'
 
 const Home: React.FC<HTMLElement> = () => {
   return(
@@ -32,7 +35,11 @@ const Home: React.FC<HTMLElement> = () => {
         <Container>
           <Divider/>
         </Container>
-        <Testimonials />
+        <Testimonials
+            title="A hospedagem me ajudou a pagar por uma nova cozinha e outras melhorias."
+            content="Paulo hospeda em São Paulo para ganhar um dinheiro extra"
+            image={paulo}
+        />
         <Container>
           <Divider/>
         </Container>
@@ -50,6 +57,32 @@ const Home: React.FC<HTMLElement> = () => {
           ))}
         </Container> 
           <Hero background={roomaid}  />
+          <Container>
+          <Divider/>
+        </Container>
+        <Testimonials
+            direction="row-reverse"
+            title="A hospedagem me ajudou a colocar uma internet mais rapida e colocar um pequeno Co-working para meus hospedes."
+            content="Linda hospeda em cidade do Mexico e adora receber programadores"
+            image={linda}
+        />
+        <Container>
+          <Divider/>
+        </Container>
+          <Container>
+           <Title text="Conheça o Airbnb" />
+        </Container>  
+        <Container>
+             <Card 
+            title="O que é o Airbnb?"
+             content="O Airbnb conecta pessoas com lugares para ficar e coisas para fazer ao redor do mundo. A comunidade é impulsionada pelos anfitriões, que fornecem aos seus hóspedes a oportunidade única de viajar como um morador local."
+             >
+            </Card>
+            <Card 
+            title="O que significa hospedar?" 
+             content="Você pode ganhar dinheiro compartilhando seu quarto ou casa com viajantes do mundo inteiro. Quando e como você interage com seus hóspedes é uma decisão sua."             >
+            </Card>
+        </Container>
       </>
   );
 }

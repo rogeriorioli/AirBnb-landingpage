@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
-export const RowContainer = styled.div`
+export interface RowProps {
+    direction? : 'initial' | 'row-reverse'
+
+}
+
+export const RowContainer = styled.div<RowProps>`
 
     display : flex;
     align-items  : center;
     justify-content: space-between;
+    flex-direction : ${props => props.direction};
     width : 95%;
     margin : auto;
     padding : 0 4rem;

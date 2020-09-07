@@ -2,7 +2,7 @@ import React , {ReactNode} from 'react';
 
 import {BulletBg,  BulletContainer } from './styles';
 
-interface BulletProps extends BulletBg{
+interface BulletProps extends BulletBg {
     value : string | ReactNode,
 }
 
