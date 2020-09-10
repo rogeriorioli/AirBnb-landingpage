@@ -7,7 +7,7 @@ interface TitleProps {
 }
 
 
-const Title: React.FC<TitleProps> = ({text}) => {
+const Title = ({text} :TitleProps) => {
   return(
         <TitleContainer >
             <h2>{text}</h2>

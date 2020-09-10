@@ -3,7 +3,7 @@ import Line from '../Line';
 
 import { DividerContainer } from './styles';
 
-const Divider: React.FC = () => {
+const Divider = () => {
   return( <DividerContainer>
             <Line/>
         </DividerContainer>);

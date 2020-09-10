@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {FaAirbnb} from 'react-icons/fa'
 import { HeaderContainer } from './styles';
 
-const Header: React.FC = () => {
+const Header = () => {
   return(
       <HeaderContainer>  
           <Link to="/">

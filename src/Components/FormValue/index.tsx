@@ -3,7 +3,7 @@ import Button from '../Button';
 import { data } from './data'
 import * as S from './styles';
 
-const FormValue: React.FC = () => {
+const FormValue = () => {
   const [diary , setDiary] = useState<number>(0);
   const [cityValue, setCityValue] = useState<number>(0);
   const [valueDays, setValuesDays]= useState<number>(0);

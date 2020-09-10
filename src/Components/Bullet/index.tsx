@@ -6,7 +6,7 @@ interface BulletProps extends BulletBg {
     value : string | ReactNode,
 }
 
-const Bullet: React.FC<BulletProps> = ({value, bgcolor }) => {
+const Bullet = ({value, bgcolor } :BulletProps) => {
   return(
     <BulletContainer bgcolor={bgcolor}>
         {value}

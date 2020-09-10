@@ -4,7 +4,7 @@ import Layouts from '../Layouts';
 import Home from '../Pages/Home';
 // import { Container } from './styles';
 
-const Routes: React.FC = () => {
+const Routes = () => {
   return(
       <BrowserRouter>
             <Switch>

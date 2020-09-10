@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { PropsWithChildren, ReactNode } from 'react';
 
 
 
 import { ContainerDefault } from './styles';
 
-const Container: React.FC = ({children}) => {
+const Container = (props :PropsWithChildren<ReactNode>) => {
   return(
       <ContainerDefault>
-          {children}
+          {props.children}
       </ContainerDefault>
   );
 }

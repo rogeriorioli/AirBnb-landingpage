@@ -7,7 +7,7 @@ interface ButtonProps extends Bgcolor, ButtonHTMLAttributes<HTMLButtonElement> {
     label: string;
   }
   
-const Button: React.FC<ButtonProps> = ({ label, background, ...props }) => {
+const Button = ({ label, background, ...props } :ButtonProps) => {
     return (
       <ButtonContainer {...props} background={background} >{label}</ButtonContainer>
     )

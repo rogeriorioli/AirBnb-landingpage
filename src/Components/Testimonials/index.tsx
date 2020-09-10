@@ -12,7 +12,7 @@ interface TestimonialsProps extends RowProps {
 }
 
 
-const Testimonials: React.FC<TestimonialsProps> = ({direction, title , content , image}) => {
+const Testimonials = ({direction, title , content , image} :TestimonialsProps) => {
   return (
     <Container>
       <RowContainer direction={direction}>

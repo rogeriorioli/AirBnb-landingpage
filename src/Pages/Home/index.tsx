@@ -17,7 +17,7 @@ import paulo from '../../assets/images/testimonials.jpeg'
 
 import linda from '../../assets/images/testimonials2.jpeg'
 
-const Home: React.FC<HTMLElement> = () => {
+const Home = () => {
   return(
       <>
         <Hero background={herobg} element={<FormValue/>} />

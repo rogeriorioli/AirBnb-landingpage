@@ -1,15 +1,16 @@
-import React , {ReactNode} from 'react';
+import React , { ReactNode} from 'react';
 
 import { CardContainer } from './styles';
-interface CardProps {
+interface CardProps{
     title : string,
     content : string,
     line? : ReactNode; 
     steps? : ReactNode;
+    children? : ReactNode; 
 }
 
 
-const Card: React.FC<CardProps> = ({title , content ,line , steps}) => {
+const Card = ({title , content ,line , steps } :CardProps) => {
   return(
       <CardContainer>
           {steps}

@@ -2,7 +2,7 @@ import React from 'react';
  
 import { LineStyle } from './styles';
 
-const Line: React.FC = () => {
+const Line = () => {
   return <LineStyle />;
 }
 

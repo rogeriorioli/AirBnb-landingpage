@@ -6,10 +6,10 @@ interface HeroProps extends Bgprops {
     element? : ReactNode
 }
 
-const Hero: React.FC<HeroProps> = (props) => {
+const Hero = ({element , background }: HeroProps) => {
   return(
-      <HeroContainer background={props.background}>
-        {props.element}
+      <HeroContainer background={background}>
+        {element}
        </HeroContainer> 
   );
 }
